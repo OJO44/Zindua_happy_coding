@@ -7,7 +7,8 @@ def temp_converter(temp_from ,temp_to , temp_value):
 
     elif (temp_from == "FARENHEIT" and temp to == "DEGREE"):
         temp = temp_value + 33.5
-        print(f"{temp_value} degrees celcius is equivalent to {temp} in!" )
+        print(f"{temp_value} degrees celcius is equivalent to {temp} in farenheit!" )
+    else
     
     
     
