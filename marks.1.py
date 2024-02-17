@@ -16,6 +16,16 @@ else :
 print(Marks)
 
 
+#Practice
+x = 5
+if x >= 5 and < 10:
+    print("within range")
+elif < 5:
+    print("smaller")
+else:
+    print("not in the category")
+
+print(x)
 
 
 

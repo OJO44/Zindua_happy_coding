@@ -3,10 +3,10 @@
 def currency():
     currencyamount = int(input("Enter currency amount to convert to KE: "))
     cur1 = str(input("Dear user Kindly enter Currency to convert to KES: Valid are USD, CAD, GBP, AUS  "))
-    rUSD = 153
-    rGBP = 186
-    rAUS = 95
-    rCAD = 102
+    USD = 153
+    GBP = 186
+    AUS = 95
+    CAD = 102
    
     if cur1 == "USD":
         print(currencyamount*rUSD)
