@@ -9,16 +9,16 @@ def currency():
     CAD = 102
    
     if cur1 == "USD":
-        print(currencyamount*rUSD)
+        print(currencyamount*USD)
 
     elif cur1 == "CAD":
-        print(currencyamount*rCAD)
+        print(currencyamount*CAD)
 
     elif cur1 == "GBP":
-        print(currencyamount*rGBP)
+        print(currencyamount*GBP)
 
     elif cur1 == "AUS":
-        print(currencyamount*rAUS)
+        print(currencyamount*AUS)
 
     else:
      print("invalid currency")

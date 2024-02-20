@@ -17,10 +17,10 @@ print(Marks)
 
 
 #Practice
-x = 5
-if x >= 5 and < 10:
+x = int(input("enter your position: "))
+if x >= 5 and x  < 10:
     print("within range")
-elif < 5:
+elif x < 5:
     print("smaller")
 else:
     print("not in the category")

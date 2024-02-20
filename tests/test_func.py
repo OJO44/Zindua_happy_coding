@@ -9,9 +9,12 @@ def assess(temp):
         print('You look good buddy')
 
 def main(temp):
-    temp = float(temp)
-    temp_converter(temp)
-    assess(temp)
+    try:
+        temp = float(temp)
+        temp_converter(temp)
+        assess(temp)
+    except Exception as e:
+        print('The error is: ', e)
 
 temp_input = input("Enter temperature in celcius:")
 main(temp_input)
