@@ -1,0 +1,5 @@
+Number of lines: 5
+Number of words: 28
+Number of characters: 129
+Average word length: 3.642857142857143
+Most common word: want
