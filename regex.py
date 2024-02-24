@@ -2,7 +2,7 @@ import re
 
 # Define a regex pattern for a phone number (+254 234 098 134)
 #text = "Mentors phone number 254-234-098-134"
-#pattern = r"\d{3}-\d{3}-\d{3}-\d{3}" 
+#pattern = r"\+\d{3}\s\d{3}\s\d{3}\s\d{3}" 
 
 #result = re.search(pattern, text)
 #print(result)
