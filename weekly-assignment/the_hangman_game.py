@@ -44,7 +44,3 @@ while failure_counts > 0:
 # loss
 if failure_counts == 0:
     print(f"Sorry, you lost. The secret word was '{secret_word}'.")
-
-
-
-    
