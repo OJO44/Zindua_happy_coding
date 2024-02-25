@@ -25,3 +25,19 @@ email_addresses = extract_email_addresses(queries)
 for address in email_addresses:
     print(address)
 
+
+
+import re
+
+# Define the pattern for the phone number
+pattern = r"\(\+254\)[\s.-]?\d{3}[\s.-]?\d{4}"
+
+# Text containing phone numbers
+sentence = "define a regex pattern for the phone number (+254) 098 1134, (+254) .098. 1234, (+254) -098-5134"
+
+# Search for phone numbers in the text using the pattern
+result = re.search(pattern, sentence)
+
+# Print the result
+if result:
+    print(result.group())
