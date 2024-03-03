@@ -3,7 +3,7 @@ file = open("josefile.txt", "r")
 text = file.read()
 
 # Count number of lines in file
-numOfLines = text.count("\n") + 1
+numOfLines = text.count("\n") + 1       
 print("Number of lines:", numOfLines)
 
 # Count number of words in lines

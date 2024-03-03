@@ -1,5 +1,4 @@
 import requests
-import openpyxl
 from bs4 import BeautifulSoup
 
 response = requests.get ("https://www.centralbank.go.ke/rates/forex-exchange-rates/")

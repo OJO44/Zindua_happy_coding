@@ -36,15 +36,15 @@ You can also call me at one ofthe following lines +2547- 111 3339, +2525.555 676
 #for match in matches:
 #   print(match.group())
 
-import re
+# import re
 
-greeting = "Hi, how are you?"
-pattern = re.compile(r"^(Hi).*\?$")
+# greeting = "Hi, how are you?"
+# pattern = re.compile(r"^(Hi).*\?$")
 
-matches = pattern.finditer(greeting)
+# matches = pattern.finditer(greeting)
 
-for match in matches:
-    print(match.group(0))
+# for match in matches:
+#     print(match.group(0))
 
 #The regular expression pattern r"^(Hi).*\?$" is used to match a greeting that starts with "Hi" and ends with a question mark.
 #The ^ anchor ensures that the pattern matches "Hi" at the beginning of the string.

@@ -1,7 +1,14 @@
 import requests
+from bs4 import BeautifulSoup
 
-response = requests.get ("https://www.centralbank.go.ke/rates/forex-exchange-rates/")
 
+url = "https://hojaleaks.com/python"
+response = requests.get(url)
 #print(response.status_code)
+soup = BeautifulSoup(response.content, "html.parser")
+#print(soup)
+#scrape https://hojaleaks.com/python and get title/ heading of the first 3 articles
+articles = soup.find_all("h1")
 
-print(response.content)
+for article in articles:
+    print(article.text)

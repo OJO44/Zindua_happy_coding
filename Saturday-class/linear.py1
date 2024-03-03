@@ -1,0 +1,43 @@
+
+#getting the index of a number
+
+def linear_search(arr, target):
+    for i in range(len(arr)):
+        if arr [i] == target:
+            return i
+    
+    return -1
+my_list = [29, 85, 50, 57, 40, 80, 20, 30, 20]
+my_target = 78
+result = linear_search(my_list, my_target)
+
+if result != -1: 
+    print(f"target {my_target} found at index {result}")
+
+else:
+    print(f"target {my_target} not found in the list")
+
+
+#Alternative workflow
+def linear_search(arr, target):
+    for i, num in enumerate(arr):  # Use enumerate to get both index and value
+        if num == target:  # Correct the syntax for accessing elements in the array
+            return i
+    return -1
+
+
+#In the context of the code snippet you provided, the for i, num in enumerate(arr): line is a for loop that utilizes the enumerate() function to iterate over the elements of the arr list. Here is an explanation of the components:
+
+#enumerate(): It is a built-in Python function that returns an iterator yielding pairs of (index, value) for each element in the iterable provided. In this case, enumerate(arr) returns an iterator that produces tuples where i represents the index of the current element, and num represents the value of the current element.
+
+#for i, num in enumerate(arr):: This line unpacks the tuples yielded by enumerate(arr), assigning the index of the element to i and the value of the element to num in each iteration of the loop.
+
+#So, in the line for i, num in enumerate(arr):, i represents the index of the current element being processed, and num represents the value of that element. This allows you to access both the index and value of each element in the list during each iteration of the loop, making it convenient to perform operations that require both the index and value of elements in the list.
+my_list = [29, 85, 50, 57, 40, 80, 20, 30, 20]
+my_target = 30
+result = linear_search(my_list, my_target)
+
+if result != -1:
+    print(f"Target {my_target} found at index {result}.")
+else:
+    print(f"Target {my_target} not found in the list.")
