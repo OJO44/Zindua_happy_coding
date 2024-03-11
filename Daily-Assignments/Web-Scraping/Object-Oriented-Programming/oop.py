@@ -18,3 +18,9 @@ My_Book = P_Book("Learn Python", " Joseph", 1999)
 print(My_Book.title)
 print(My_Book.author)
 print(My_Book.ISBN)
+
+#methods is same as functions.
+#how to call methods.
+#return assist you to reuse your code.
+#arguments are the actual values
+#parameters are what you use to pass the values.

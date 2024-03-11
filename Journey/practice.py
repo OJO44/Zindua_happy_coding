@@ -37,3 +37,15 @@ while turns > 0:
 
 if turns == 0:
     print('Sorry, you lost. The word was:', correct_word)
+
+
+
+def monthly_phone_bill(days, bill):
+    daily_bill = int(input("Enter daily bill amount: "))
+    total_phone_bill = days * daily_bill
+    return total_phone_bill
+
+days = 31
+bill = 100
+
+print(monthly_phone_bill(days, bill))
